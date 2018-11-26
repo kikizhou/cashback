@@ -1,0 +1,40 @@
+@import (reference) "../../style/mixin.less";
+
+.home-container{
+  padding-top: 88px;
+  .common-title{
+    .font(36px, @base-color);
+    padding: 30px;
+  }
+  .avatar-img{
+    width:100%;
+    height:auto;
+    margin-top:150px;
+  }
+  .common-select-btn{
+    background-color: #fff;
+    display: block;
+    min-height: 120px;
+    .font(42px, #ccc, center);
+    .flex;
+    .selected-pro-list{
+      .flex();
+      flex-wrap: wrap;
+      .selected-pro-item{
+        width: 340px;
+        margin: 10px;
+        line-height: 50px;
+        .font(32px, @text-align:center);
+      }
+    }
+  }
+ 
+  .submit-btn{
+    width: 90%;
+    background-color: @base-color;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    line-height: 100px;
+    .font(40px, #fff, center);
+  }
+}
